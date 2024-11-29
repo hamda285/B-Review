@@ -59,3 +59,27 @@ header .header-nav ul li a:hover {
     border-radius: 5px;
     padding: 10px;
 }
+
+
+header #signinBtn {
+    background: #384959;
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+header #signinBtn i {
+    margin-left: 10px;
+    /* color: #bdddfc !important; */
+}
+
+header button:hover {
+    background-color: #384959;
+    color: #bdddfc;
+    border: 1px solid #bdddfc;
+}
