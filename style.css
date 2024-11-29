@@ -201,3 +201,71 @@ header button:hover {
     color: #384959;
     margin-left: 7px;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    /* Menu for mobile */
+    header .header-nav {
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    header .header-nav.active {
+        display: block;
+    }
+
+    header .header-nav ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0;
+        list-style: none;
+        margin-top: 20px;
+    }
+
+    header button {
+        margin-top: 20px;
+    }
+
+    /*hamburger icon */
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        margin-right: 100;
+    }
+
+    #hero h2 {
+        font-size: 2rem;
+    }
+
+    #hero p {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+
+    #testimonials {
+        margin-left: 10px;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        width: 80%;
+
+    }
+}
