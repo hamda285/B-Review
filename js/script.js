@@ -95,3 +95,6 @@ function getStarRating(rating) {
     }
     return stars;
 }
+
+// Calling display function when page load
+window.onload = displayTestimonials;
