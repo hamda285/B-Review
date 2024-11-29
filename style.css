@@ -25,3 +25,37 @@ header h1 {
     flex-grow: 1;
     margin-left: 15px;
 }
+
+
+header .header-nav {
+    flex-grow: 2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+header .header-nav ul {
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+    list-style: none;
+}
+
+header .header-nav ul li {
+    display: inline-block;
+}
+
+header .header-nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+header .header-nav ul li a:hover {
+    background-color: #384959;
+    border-radius: 5px;
+    padding: 10px;
+}
