@@ -83,3 +83,18 @@ header button:hover {
     color: #bdddfc;
     border: 1px solid #bdddfc;
 }
+
+ /* Hamburger Icon */
+ .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .hamburger .bar {
+    width: 25px;
+    height: 4px;
+    background-color: #384959;
+    border-radius: 5px;
+  }
