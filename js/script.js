@@ -54,7 +54,7 @@ const reviews = [
     }
 ];
 
-// Function to display the feedback dynamically
+//Function to display the testimonial as dynamically
 function displayTestimonials() {
     const testimonialContainer = document.querySelector(".testimonial-container");
 
@@ -81,4 +81,17 @@ function displayTestimonials() {
         // Append the card to the container
         testimonialContainer.appendChild(testimonialCard);
     });
+}
+
+// Function to generate star rating
+function getStarRating(rating) {
+    let stars = '';
+    for (let i = 0; i < 5; i++) {
+        if (i < rating) {
+            stars += '<i class="fas fa-star"></i>'; // Filled star
+        } else {
+            stars += '<i class="far fa-star"></i>'; // Empty star
+        }
+    }
+    return stars;
 }
