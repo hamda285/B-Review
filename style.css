@@ -117,3 +117,15 @@ header button:hover {
     width: 70%;
     margin: 0 auto;
 }
+
+/* Testimonials Section */
+#testimonials {
+    text-align: center;
+    padding: 60px 20px;
+    margin-left: 70px;
+}
+
+#testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
