@@ -16,4 +16,12 @@ header .container {
     justify-content: space-between;
     align-items: center;
     width: 90%;
-  }
+}
+
+header h1 {
+    color: #384959;
+    font-weight: bold;
+    font-size: 1.5rem;
+    flex-grow: 1;
+    margin-left: 15px;
+}
