@@ -173,3 +173,31 @@ header button:hover {
     text-align: center;
     color: #384959;
 }
+
+.testimonial-business {
+    font-size: 700;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #384959;
+    text-align: center;
+}
+
+.testimonial-opinion {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #6A89A7;
+    text-align: center;
+}
+
+.testimonial-rating {
+    display: flex;
+    justify-content: start;
+    margin-left: 60px;
+
+}
+
+.star-rating i {
+    color: #384959;
+    margin-left: 7px;
+}
