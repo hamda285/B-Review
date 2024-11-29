@@ -4,3 +4,10 @@
     box-sizing: border-box;
     font-family: "Sen", sans-serif;
   }
+
+    /* Header */
+    header {
+        background-color: #88bdf2;
+        padding: 20px 0;
+      }
+      
