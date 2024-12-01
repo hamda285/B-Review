@@ -97,3 +97,26 @@
     padding: 8px;
   }
 }
+
+/* Tablet Devices (768px - 1024px) */
+@media (max-width: 1024px) {
+  .registrationContainer {
+    width: 80%;
+    margin-top: 40px;
+    padding: 25px;
+  }
+
+  .registrationContainer h2 {
+    font-size: 22px;
+  }
+
+  .inputGroup input {
+    font-size: 15px;
+    padding: 8px 35px;
+  }
+
+  .regBtn {
+    font-size: 15px;
+    padding: 9px;
+  }
+}
