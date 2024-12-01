@@ -12,3 +12,9 @@ loginForm.addEventListener('submit', (e) => {
 
           // Check if user exists
     const user = users.find((usr) => usr.email === emailInput.value && usr.password === passwordInput.value);
+
+     // Handle login result
+     if (!user) {
+        alert("Invalid email or password");
+        return;
+    }
