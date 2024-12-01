@@ -70,3 +70,8 @@ document.addEventListener('DOMContentLoaded', () => {
     L.marker([2.0459, 45.3480]).addTo(map) // Add a marker for Mogadishu
         .bindPopup('Mogadishu, Somalia')
         .openPopup();
+
+     // Handle back home button
+     document.getElementById('makeReview').addEventListener('click', () => {
+        window.location.href = '../html/index.html'; // Redirect to ahomePage.html
+    });    
