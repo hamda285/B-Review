@@ -40,3 +40,13 @@ header h1 {
     font-size: 1.2rem;
 }
 
+.user-info #logout-button {
+    background-color: #384959;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
