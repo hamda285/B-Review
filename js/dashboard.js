@@ -36,3 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('weatherInfo').innerText = 'Failed to load weather data.';
         }
     }
+
+      // Function to display weather data
+      function displayWeather(data) {
+        const { name, coord, timezone, sys, main } = data; // Destructuring to get necessary properties
