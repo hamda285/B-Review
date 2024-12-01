@@ -18,4 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('totalUsers').innerText = totalUsers;
     document.getElementById('totalBusinesses').innerText = totalBusinesses;
  
- 
+  // Weather API integration for Mogadishu
+  const weatherApiKey = '4b5bb59e90d6c180fd66d3662994faaf'; // Provided weather API key
+  const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Mogadishu,SO&appid=${weatherApiKey}&units=metric`;
