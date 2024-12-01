@@ -7,3 +7,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!currentUser) {
         window.location.href = 'login.html';
     }
+
+     // total user
+     const totalUsers = 100; 
+     //total business
+     const totalBusinesses = 50; 
+ 
+ 
