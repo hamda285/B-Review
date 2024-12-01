@@ -9,4 +9,14 @@
     border-radius: 8px;
     box-shadow: 0 0 5px #88BDF2;
   }
+
+  .registrationContainer h2 {
+    font-weight: bold;
+    color: #384959;
+    text-align: center;
+    font-size: 24px;
+    line-height: 24px;
+    padding-bottom: 20px;
+  }
+  
   
