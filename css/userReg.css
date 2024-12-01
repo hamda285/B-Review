@@ -1,22 +1,47 @@
 /* ==============user registration=============== */
 .registrationContainer {
-    background-color: #88BDF2;
-    width: 500px;
-    padding: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 200px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px #88BDF2;
-  }
+  background-color: #88bdf2;
+  width: 500px;
+  padding: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 200px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #88bdf2;
+}
 
-  .registrationContainer h2 {
-    font-weight: bold;
-    color: #384959;
-    text-align: center;
-    font-size: 24px;
-    line-height: 24px;
-    padding-bottom: 20px;
-  }
-  
-  
+.registrationContainer h2 {
+  font-weight: bold;
+  color: #384959;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+
+.inputGroup {
+  position: relative;
+  margin: 20px auto;
+}
+
+.inputGroup i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #384959;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 10px 40px;
+  border: 1px solid #384959;
+  border-radius: 5px;
+  height: 45px;
+  font-size: 16px;
+}
+
+.inputGroup input:focus {
+  outline: none;
+  border-color: #88bdf2;
+}
