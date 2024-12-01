@@ -12,5 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
      const totalUsers = 100; 
      //total business
      const totalBusinesses = 50; 
+
+     
+    // Set total users and businesses
+    document.getElementById('totalUsers').innerText = totalUsers;
+    document.getElementById('totalBusinesses').innerText = totalBusinesses;
  
  
