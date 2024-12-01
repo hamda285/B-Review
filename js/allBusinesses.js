@@ -105,3 +105,11 @@ if (window.location.pathname.includes("allBusinesses.html")) {
         displayCards(currentPage);
         updatePagination();
     }
+
+    searchButton.addEventListener('click', handleSearch);
+
+    searchInput.addEventListener('keypress', (event) => {
+        if (event.key === 'Enter') {
+            handleSearch();
+        }
+    });
