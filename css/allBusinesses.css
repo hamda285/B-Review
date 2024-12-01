@@ -122,3 +122,20 @@ header h1 {
     margin-right: 25% !important;
     margin-left: 25% !important;
 }
+
+.card {
+    background-color: #384959;
+    border: 1px solid #88BDF2;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+    box-shadow: 0 0 3px #88BDF2;
+    height: auto;
+    margin-top: 10px;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
