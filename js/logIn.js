@@ -9,3 +9,6 @@ loginForm.addEventListener('submit', (e) => {
 
         // Retrieve users from local storage
         const users = JSON.parse(localStorage.getItem('users')) || [];
+
+          // Check if user exists
+    const user = users.find((usr) => usr.email === emailInput.value && usr.password === passwordInput.value);
