@@ -75,6 +75,7 @@
   border: 2px solid #384959;
 }
 
+ /* ==============Responsive Design=============== */
 /* Mobile Devices (<= 767px) */
 @media (max-width: 767px) {
   .registrationContainer {
