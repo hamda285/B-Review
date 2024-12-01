@@ -8,7 +8,7 @@ const error = document.getElementById('error');
 const success = document.getElementById('suc');
 
 // form submission
-userRegistrationForm.addEventListener('submit', function(event) {
+userRegistrationForm.addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent default form submission
 
     clearMessages(); // Clear previous messages
@@ -18,16 +18,23 @@ userRegistrationForm.addEventListener('submit', function(event) {
         return; // Stop if any validation fails
     }
 
-      // Create user object and save to localstorage
-      const user = {
+    // Create user object and save to localstorage
+    const user = {
         username: username.value.trim(),
         email: email.value.trim(),
         password: password.value
     };
 
-      // Check for existing users
-      const users = JSON.parse(localStorage.getItem('users')) || [];
-      if (users.some(existingUser => existingUser.email === user.email)) {
-          setError('Email already exists!');
-          return;
-      }
+    // Check for existing users
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+    if (users.some(existingUser => existingUser.email === user.email)) {
+        setError('Email already exists!');
+        return;
+    }
+
+    // Add new user and store it
+    users.push(user);
+    localStorage.setItem('users', JSON.stringify(users));
+    success.textContent = 'Registration successful!...';
+    setTimeout(() => window.location.href = 'login.html', 2000);
+});
