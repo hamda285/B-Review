@@ -111,3 +111,14 @@ header h1 {
     color: #384959;
     cursor: not-allowed;
 }
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25% !important;
+    margin-left: 25% !important;
+}
