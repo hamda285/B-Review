@@ -171,3 +171,9 @@ header h1 {
     border-radius: 5px;
 }
 
+.card button:hover {
+    border: 1px solid #BDDDFC;
+    background-color: fff;
+    color: #384959;
+}
+
