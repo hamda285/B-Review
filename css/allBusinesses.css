@@ -85,3 +85,8 @@ header h1 {
     border-radius: 5px;
     cursor: pointer;
 }
+
+/*pagination */
+.pagination {
+    text-align: center;
+}
