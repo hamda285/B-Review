@@ -27,3 +27,10 @@ header h1 {
     text-align: center;
     margin-left: 20%;
 }
+
+.user-info {
+    position: absolute;
+    right: 5%;
+    top: 15px;
+    color: #fff;
+}
