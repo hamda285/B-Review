@@ -153,3 +153,10 @@ header h1 {
     color: #BDDDFC;
 }
 
+.card p {
+    font-weight: 200;
+    font-size: medium;
+    margin-top: 10px;
+    color: #fff;
+}
+
