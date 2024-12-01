@@ -85,3 +85,7 @@
     height: 80vh;
   }
   
+  .weather h1 {
+    margin-bottom: 20px;
+  }
+  
