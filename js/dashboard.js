@@ -58,3 +58,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
      // Calling fetchWeather to get data
      fetchWeather();
+
+      // initializing the map for Mogadishu
+    const map = L.map('map').setView([2.0459, 45.3480], 12); // Coordinates for Mogadishu
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 45,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([2.0459, 45.3480]).addTo(map) // Add a marker for Mogadishu
+        .bindPopup('Mogadishu, Somalia')
+        .openPopup();
