@@ -93,3 +93,15 @@ if (window.location.pathname.includes("allBusinesses.html")) {
         };
         paginationContainer.appendChild(nextButton);
     }
+
+      // Function to handle search
+      function handleSearch() {
+        const query = searchInput.value.toLowerCase();
+        filteredData = businessData.filter(business => {
+            return business.name.toLowerCase().includes(query) || business.details.toLowerCase().includes(query);
+        });
+
+        currentPage = 1;
+        displayCards(currentPage);
+        updatePagination();
+    }
