@@ -40,3 +40,18 @@ document.addEventListener('DOMContentLoaded', () => {
       // Function to display weather data
       function displayWeather(data) {
         const { name, coord, timezone, sys, main } = data; // Destructuring to get necessary properties
+        const sunrise = new Date(sys.sunrise * 1000).toLocaleTimeString();
+        const sunset = new Date(sys.sunset * 1000).toLocaleTimeString();
+
+        const weatherInfo = `
+            <p>City: ${name}</p>
+            <p>Latitude: ${coord.lat}</p>
+            <p>Longitude: ${coord.lon}</p>
+            <p>Timezone: UTC ${timezone / 3600}</p>
+            <p>Temperature: ${main.temp} °C</p>
+            <p>Weather: ${data.weather[0].description}</p>
+            <p>Sunrise: ${sunrise}</p>
+            <p>Sunset: ${sunset}</p>
+        `;
+        document.getElementById('weatherInfo').innerHTML = weatherInfo;
+    }
