@@ -90,3 +90,13 @@ header h1 {
 .pagination {
     text-align: center;
 }
+
+.pagination button {
+    background-color: #384959;
+    color: #BDDDFC;
+    border: 1px solid #BDDDFC;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 10px 5px;
+    border-radius: 5px;
+}
