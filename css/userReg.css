@@ -57,15 +57,20 @@
 }
 
 .regBtn {
-    background-color: #384959;
-    color: #BDDDFC;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    width: 100%;
-    margin-top: 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
+  background-color: #384959;
+  color: #bdddfc;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.regBtn:hover {
+  background-color: #bdddfc;
+  color: #384959;
+  border: 2px solid #384959;
+}
