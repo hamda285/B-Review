@@ -14,3 +14,13 @@
   background-position: center;
   background-size: cover;
 }
+
+#loginForm {
+    width: 350px;
+    height: 450px;
+    background-color: #88BDF2;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+
+    
