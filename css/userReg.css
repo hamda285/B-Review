@@ -1,0 +1,12 @@
+/* ==============user registration=============== */
+.registrationContainer {
+    background-color: #88BDF2;
+    width: 500px;
+    padding: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 200px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #88BDF2;
+  }
+  
