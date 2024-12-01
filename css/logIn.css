@@ -54,10 +54,15 @@
 }
 
 .login {
-    width: 250px;
-    height: 40px;
-    font-size: 1rem;
-    background: #384959;
-    color: #BDDDFC;
-    border: none;
+  width: 250px;
+  height: 40px;
+  font-size: 1rem;
+  background: #384959;
+  color: #bdddfc;
+  border: none;
+  margin-top: 30px;
+  margin-left: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s ease;
 }
