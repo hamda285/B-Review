@@ -50,3 +50,19 @@
     padding: 20px;
   }
   
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    background-color: #ddd;
+    border: 1px solid #ea9c52 !important;
+    border-radius: 5px;
+    padding: 20px;
+    width: 48%;
+    text-align: center;
+    height: 10% !important;
+  }
+  
