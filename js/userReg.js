@@ -17,3 +17,10 @@ userRegistrationForm.addEventListener('submit', function(event) {
     if (!validateUsername() || !validateEmail() || !validatePassword() || !validateConfirmPassword()) {
         return; // Stop if any validation fails
     }
+
+      // Create user object and save to localstorage
+      const user = {
+        username: username.value.trim(),
+        email: email.value.trim(),
+        password: password.value
+    };
