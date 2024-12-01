@@ -23,5 +23,5 @@ loginForm.addEventListener('submit', (e) => {
     localStorage.setItem('currentUser', JSON.stringify(user));
 
     //Redirect to dashboard after login
-    window.location.href = 'dashboard.html';
+    window.location.href = '../html/dashboard.html';
 });
