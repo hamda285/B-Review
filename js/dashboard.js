@@ -55,3 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         document.getElementById('weatherInfo').innerHTML = weatherInfo;
     }
+
+     // Calling fetchWeather to get data
+     fetchWeather();
