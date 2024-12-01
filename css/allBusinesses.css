@@ -100,3 +100,14 @@ header h1 {
     margin: 10px 5px;
     border-radius: 5px;
 }
+
+.pagination button:hover {
+    background-color: #BDDDFC;
+    color: #384959;
+}
+
+.pagination button.disabled {
+    background-color: #88BDF2;
+    color: #384959;
+    cursor: not-allowed;
+}
