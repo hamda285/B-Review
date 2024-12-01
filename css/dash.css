@@ -20,3 +20,9 @@
     height: 100vh;
   }
   
+  .sidebar h2 {
+    margin-top: 40%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
