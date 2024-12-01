@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Sen", sans-serif;
+}
+
 /* ==============user registration=============== */
 .registrationContainer {
   background-color: #88bdf2;
@@ -75,7 +82,7 @@
   border: 2px solid #384959;
 }
 
- /* ==============Responsive Design=============== */
+/* ==============Responsive Design=============== */
 /* Mobile Devices (<= 767px) */
 @media (max-width: 767px) {
   .registrationContainer {
@@ -122,26 +129,25 @@
   }
 }
 
-  /* Very Small Devices (<= 320px width) */
-  @media (max-width: 320px) {
-    .registrationContainer {
-      width: 100%;
-      margin-top: 10px;
-      padding: 10px;
-    }
-  
-    .registrationContainer h2 {
-      font-size: 16px;
-    }
-  
-    .inputGroup input {
-      font-size: 14px;
-      padding: 8px 20px;
-    }
-  
-    .regBtn {
-      font-size: 14px;
-      padding: 8px;
-    }
+/* Very Small Devices (<= 320px width) */
+@media (max-width: 320px) {
+  .registrationContainer {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
   }
-  
+
+  .registrationContainer h2 {
+    font-size: 16px;
+  }
+
+  .inputGroup input {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .regBtn {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
