@@ -40,3 +40,8 @@
     cursor: pointer;
   }
   
+  .sidebar button:hover {
+    background-color: #ea9c52;
+    cursor: pointer;
+  }
+  
