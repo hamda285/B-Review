@@ -73,11 +73,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
      // Handle back home button
      document.getElementById('makeReview').addEventListener('click', () => {
-        window.location.href = '../html/index.html'; // Redirect to ahomePage.html
+        window.location.href = '../html/index.html'; // Redirect to index.html
     });    
 
     // Handle Make Review button click
     document.getElementById('makeReview').addEventListener('click', () => {
         window.location.href = '../html/allBusinesses.html'; // Redirect to allBusinesses.html
     });
+
+        // Handle Logout button 
+        document.getElementById('logout').addEventListener('click', () => {
+            localStorage.removeItem('currentUser'); // Remove user data
+            window.location.href = 'login.html'; // Redirect to login page
+        });
+    });
+    
 
