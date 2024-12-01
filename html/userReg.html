@@ -16,15 +16,39 @@
             rel="stylesheet">
         <!-- css links style of the project -->
         <link rel="stylesheet" href="../style.css">
-        <link rel="stylesheet" href="./css/styles.css">
-        <link rel="stylesheet" href="./css/contactUs.css">
-        <link rel="stylesheet" href="./css/aboutUs.css">
-        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/contactUs.css">
+        <link rel="stylesheet" href="../css/aboutUs.css">
+        <link rel="stylesheet" href="../css/footer.css">
         <!-- scripts -->
         <script defer src="userReg.js"></script>
     </head>
 
     <body style="background-color: #384959;">
+        <!-- Header Section -->
+        <header>
+            <div class="container">
+                <h1>Business Reviews</h1>
+                <!-- Hamburger Icon for mobile view -->
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <!-- Navigation Menu -->
+                <div class="header-nav" id="navMenu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="categories.html">Categories</a></li>
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                    </ul>
+                    <button id="signinBtn"><i
+                            class="fa-solid fa-user">SignIn</i></button>
+                </div>
+
+            </div>
+        </header>
         <div class="registrationContainer">
             <h2>Create an Account</h2>
             <form id="userRegistrationForm">
