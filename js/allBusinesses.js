@@ -113,3 +113,10 @@ if (window.location.pathname.includes("allBusinesses.html")) {
             handleSearch();
         }
     });
+
+       // Navigate to the review page with business name as query parameter
+       window.goToReviewPage = function (businessName) {
+        window.location.href = `review.html?business=${encodeURIComponent(businessName)}`;
+    };
+}
+
