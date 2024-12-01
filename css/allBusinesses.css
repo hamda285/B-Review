@@ -77,3 +77,11 @@ header h1 {
     margin-right: 10px;
 }
 
+#search-btn {
+    padding: 10px 15px;
+    background-color: #384959;
+    color: #BDDDFC;
+    border: 1px solid #BDDDFC;
+    border-radius: 5px;
+    cursor: pointer;
+}
