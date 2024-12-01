@@ -160,3 +160,14 @@ header h1 {
     color: #fff;
 }
 
+.card button {
+    font-weight: 600;
+    background-color: #BDDDFC;
+    color: #384959;
+    border: none;
+    margin-top: 20px;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
