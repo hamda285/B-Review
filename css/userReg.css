@@ -47,11 +47,25 @@
 }
 
 .error-message {
-    color: rgb(241, 67, 67);
-    text-align: center;
+  color: rgb(241, 67, 67);
+  text-align: center;
+}
+
+.success-message {
+  color: #384959;
+  text-align: center;
+}
+
+.regBtn {
+    background-color: #384959;
+    color: #BDDDFC;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
   }
   
-  .success-message {
-    color: #384959;
-    text-align: center;
-  }
