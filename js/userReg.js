@@ -24,3 +24,10 @@ userRegistrationForm.addEventListener('submit', function(event) {
         email: email.value.trim(),
         password: password.value
     };
+
+      // Check for existing users
+      const users = JSON.parse(localStorage.getItem('users')) || [];
+      if (users.some(existingUser => existingUser.email === user.email)) {
+          setError('Email already exists!');
+          return;
+      }
