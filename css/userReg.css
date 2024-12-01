@@ -74,3 +74,26 @@
   color: #384959;
   border: 2px solid #384959;
 }
+
+/* Mobile Devices (<= 767px) */
+@media (max-width: 767px) {
+  .registrationContainer {
+    width: 90%;
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .registrationContainer h2 {
+    font-size: 20px;
+  }
+
+  .inputGroup input {
+    font-size: 14px;
+    padding: 8px 30px;
+  }
+
+  .regBtn {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
