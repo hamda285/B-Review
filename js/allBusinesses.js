@@ -29,3 +29,25 @@ if (window.location.pathname.includes("allBusinesses.html")) {
             })
             .catch(error => console.error('Error fetching data:', error));
     }
+
+    
+    // Function to display cards of All-business lists
+    function displayCards(page) {
+        cardContainer.innerHTML = '';
+
+        const startIndex = (page - 1) * cardsPerPage;
+        const endIndex = Math.min(startIndex + cardsPerPage, filteredData.length);
+
+        for (let i = startIndex; i < endIndex; i++) {
+            const business = filteredData[i];
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.innerHTML = `
+                <img src="${business.photo}" alt="${business.name}">
+                <h2>${business.name}</h2>
+                <p>${business.details}</p>
+                <button onclick="goToReviewPage('${business.name}')">Review</button>
+            `;
+            cardContainer.appendChild(card);
+        }
+    }
