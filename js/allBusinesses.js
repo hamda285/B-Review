@@ -17,3 +17,15 @@ if (window.location.pathname.includes("allBusinesses.html")) {
         filteredData = businessData;
         displayCards(currentPage);
         updatePagination();
+    } else {
+        fetch('/data/data.json')
+            .then(response => response.json())
+            .then(data => {
+                businessData = data;
+                filteredData = businessData;
+                localStorage.setItem('businessData', JSON.stringify(businessData));
+                displayCards(currentPage);
+                updatePagination();
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    }
