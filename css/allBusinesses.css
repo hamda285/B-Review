@@ -56,4 +56,8 @@ header h1 {
     border: 1px solid #384959;
 }
 
+#reviews {
+    width: min(80%, 70rem);
+    margin-inline: auto;
+}
 
