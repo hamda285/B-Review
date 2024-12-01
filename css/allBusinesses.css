@@ -34,3 +34,9 @@ header h1 {
     top: 15px;
     color: #fff;
 }
+
+.user-info #username-display {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
