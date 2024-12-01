@@ -131,3 +131,9 @@ if (currentUser) {
 } else {
     usernameDisplay.textContent = ''; // Hide if not logged in
 }
+
+//Logout
+logoutButton.addEventListener('click', () => {
+    localStorage.removeItem('currentUser'); // Clear current user
+    window.location.href = '../html/logIn.html'; // Go to login page
+});
