@@ -72,3 +72,16 @@
     height: 80vh;
   }
   
+  .weather {
+    background-image: url("https://img.freepik.com/free-vector/cloud-background-pastel-paper-cut-design-vector_53876-135919.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 48%;
+    background-color: #f4f4f4;
+    border: 1px solid #ea9c52;
+  ;
+    border-radius: 5px;
+    padding: 20px;
+    height: 80vh;
+  }
+  
