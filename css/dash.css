@@ -95,4 +95,11 @@
     line-height: 3.5rem;
     height: 80vh;
   }
+
+  .map {
+    width: 48%;
+    height: 80vh;
+    border: 1px solid #ea9c52;
+    border-radius: 5px;
+  }
   
