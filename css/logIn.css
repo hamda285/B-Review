@@ -24,3 +24,12 @@
   padding: 25px;
   box-shadow: 0 0 4px #bdddfc;
 }
+
+.containerLogIn #loginForm h1 {
+  font-weight: bold;
+  color: #384959;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 24px;
+  padding: 10px;
+}
