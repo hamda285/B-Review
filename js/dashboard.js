@@ -21,3 +21,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // Weather API integration for Mogadishu
   const weatherApiKey = '4b5bb59e90d6c180fd66d3662994faaf'; // Provided weather API key
   const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Mogadishu,SO&appid=${weatherApiKey}&units=metric`;
+
+      // Asynchronous function to fetch weather data
+      async function fetchWeather() {
+        try {
+            const response = await fetch(weatherApiUrl);
+            if (!response.ok) {
+                throw new Error('Weather data not available');
+            }
+            const data = await response.json();
+            displayWeather(data);
+        } catch (error) {
+            console.error('Error fetching weather data:', error);
+            document.getElementById('weatherInfo').innerText = 'Failed to load weather data.';
+        }
+    }
