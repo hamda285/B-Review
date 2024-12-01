@@ -75,3 +75,9 @@ document.addEventListener('DOMContentLoaded', () => {
      document.getElementById('makeReview').addEventListener('click', () => {
         window.location.href = '../html/index.html'; // Redirect to ahomePage.html
     });    
+
+    // Handle Make Review button click
+    document.getElementById('makeReview').addEventListener('click', () => {
+        window.location.href = '../html/allBusinesses.html'; // Redirect to allBusinesses.html
+    });
+
