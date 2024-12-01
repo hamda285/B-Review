@@ -51,3 +51,45 @@ if (window.location.pathname.includes("allBusinesses.html")) {
             cardContainer.appendChild(card);
         }
     }
+
+      // Function to update pagination
+      function updatePagination() {
+        paginationContainer.innerHTML = '';
+        const totalPages = Math.ceil(filteredData.length / cardsPerPage);
+
+        const prevButton = document.createElement('button');
+        prevButton.innerText = 'Previous';
+        prevButton.disabled = currentPage === 1;
+        prevButton.onclick = () => {
+            if (currentPage > 1) {
+                currentPage--;
+                displayCards(currentPage);
+                updatePagination();
+            }
+        };
+        paginationContainer.appendChild(prevButton);
+
+        for (let i = 1; i <= totalPages; i++) {
+            const pageButton = document.createElement('button');
+            pageButton.innerText = i;
+            pageButton.className = i === currentPage ? 'active' : '';
+            pageButton.onclick = () => {
+                currentPage = i;
+                displayCards(currentPage);
+                updatePagination();
+            };
+            paginationContainer.appendChild(pageButton);
+        }
+
+        const nextButton = document.createElement('button');
+        nextButton.innerText = 'Next';
+        nextButton.disabled = currentPage === totalPages;
+        nextButton.onclick = () => {
+            if (currentPage < totalPages) {
+                currentPage++;
+                displayCards(currentPage);
+                updatePagination();
+            }
+        };
+        paginationContainer.appendChild(nextButton);
+    }
