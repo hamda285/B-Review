@@ -105,4 +105,17 @@
         color: #384959;
         margin-bottom: 2rem;
       }
+
+      .rating .star {
+        cursor: pointer;
+      }
+      
+      .rating .star.active {
+        opacity: 0;
+        animation: animate 0.2s calc(var(--i) * 0.1s) ease-in-out forwards;
+      }
+      
+      .rating .star:hover {
+        transform: scale(1.1);
+      }
       
