@@ -1,0 +1,81 @@
+.contact a {
+    background-color: #88BDF2 ;
+    color: #384959;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+        display: none; /* Hide the nav items by default */
+    }
+  
+    nav ul.active {
+        display: block; /* Show when 'active' class is added */
+    }
+  
+    nav ul li {
+        margin: 10px 0;
+    }
+  
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .features .feature {
+        margin-bottom: 30px;
+    }
+  
+    .hero h2 {
+        font-size: 2rem;
+    }
+  
+    .hero p {
+        font-size: 1rem;
+    }
+  
+    .hero .cta-button {
+        font-size: 1rem;
+        padding: 12px 22px;
+    }
+  
+    .menu-toggle {
+        display: block;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+  
+    .hero p {
+        font-size: 0.9rem;
+    }
+  
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+  
+    .features .feature h3 {
+        font-size: 1.5rem;
+    }
+  
+    .features .feature p {
+        font-size: 0.9rem;
+    }
+  }
+  
