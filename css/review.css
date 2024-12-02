@@ -156,3 +156,10 @@ header h1 {
     font-size: 0.95rem;
     font-weight: 400;
   }
+
+  .btn-group .btn:hover {
+    background-color: #bdddfc;
+    color: #384959;
+    font-weight: 700;
+  }
+  
