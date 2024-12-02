@@ -26,3 +26,22 @@ window.addEventListener('popstate', (event) => {
         window.location.href = '../html/login.html'; // Redirect to login page
     }
 });
+
+
+//=================review.js====================
+document.addEventListener('DOMContentLoaded', () => {
+    const businessNameContainer = document.getElementById('business-name');
+    const ratingValue = document.querySelector('input[name="rating"]');
+    const allStars = document.querySelectorAll('.rating .star');
+    const reviewForm = document.getElementById('review-form');
+
+    // Get the business name from the URL query parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const businessName = urlParams.get('business');
+
+    // Display the business name
+    if (businessName) {
+        businessNameContainer.innerText = businessName;
+    } else {
+        businessNameContainer.innerText = "Business Name not found.";
+    }
