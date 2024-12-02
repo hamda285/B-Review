@@ -198,6 +198,11 @@ header h1 {
         font-size: 0.9rem;
     }
 
+    .user-info #username-display {
+        margin-right: 8px;
+        font-size: 1rem;
+    }
+
 
 
 }
