@@ -95,4 +95,14 @@
         margin-left: 38.5%;
         padding: 10px;
       }
+
+      .rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 2rem;
+        color: #384959;
+        margin-bottom: 2rem;
+      }
       
