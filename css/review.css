@@ -16,4 +16,11 @@
       justify-content: space-between;
       align-items: center;
     }
+
+    header h1 {
+        color: #384959;
+        font-weight: 700;
+        font-size: 1.8rem;
+        margin-left: 20%;
+      }
     
