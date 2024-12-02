@@ -58,11 +58,11 @@
     nav ul {
         flex-direction: column;
         margin-top: 10px;
-        display: none; /* Hide the nav items by default */
+        display: none;
       }
     
       nav ul.active {
-        display: block; /* Show when 'active' class is added */
+        display: block;
       }
 
       nav ul li {
@@ -85,3 +85,6 @@
       .menu-toggle {
         display: block;
       }
+    }
+
+    
