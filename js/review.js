@@ -17,3 +17,12 @@ logoutButton.addEventListener('click', () => {
     localStorage.removeItem('currentUser'); // Clear current user
     window.location.href = 'login.html'; // Redirect to login page
 });
+
+// Prevent navigating back to the login page after logout
+window.addEventListener('popstate', (event) => {
+    event.preventDefault();
+    if (!currentUser) {
+        alert("Please log in again.");
+        window.location.href = '../html/login.html'; // Redirect to login page
+    }
+});
