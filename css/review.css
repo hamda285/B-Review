@@ -61,3 +61,11 @@
         min-height: 100vh;
       }
       
+      .review-body .nav {
+        background: #bdddfc;
+        padding: 15px 0;
+        top: 0;
+        position: fixed;
+        width: 100%;
+      }
+      
