@@ -1,105 +1,97 @@
 /* =============Dhashboard============ */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Sen", sans-serif;
-  }
-  
-  .container {
-    display: flex;
-    width: 100%;
-    gap: 30px;
-  }
-  
-  .sidebar {
-    width: 200px;
-    background-color: #5588e7;
-    color: #fff;
-    padding: 20px;
-    height: 100vh;
-  }
-  
-  .sidebar h2 {
-    margin-top: 40%;
-    margin-bottom: 20px;
-    text-align: center;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Sen", sans-serif;
+}
 
-  .sidebar button {
-    font-weight: 400;
-    font-size: 1rem;
-    margin-top: 20%;
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    background-color: #ea9c52;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .sidebar button:hover {
-    background-color: #ea9c52;
-    cursor: pointer;
-  }
-  
-  .main-content {
-    flex-grow: 1;
-    padding: 20px;
-  }
-  
-  .cards {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-  }
-  
-  .card {
-    background-color: #ddd;
-    border: 1px solid #ea9c52 !important;
-    border-radius: 5px;
-    padding: 20px;
-    width: 48%;
-    text-align: center;
-    height: 10% !important;
-  }
-  
-  .weather-map {
-    display: flex;
-    justify-content: space-around;
-    height: 80vh;
-  }
-  
-  .weather {
-    background-image: url("https://img.freepik.com/free-vector/cloud-background-pastel-paper-cut-design-vector_53876-135919.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 48%;
-    background-color: #f4f4f4;
-    border: 1px solid #ea9c52;
-  ;
-    border-radius: 5px;
-    padding: 20px;
-    height: 80vh;
-  }
-  
-  .weather h1 {
-    margin-bottom: 20px;
-  }
-  
-  #weatherInfo {
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 3.5rem;
-    height: 80vh;
-  }
+.container {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+}
 
-  .map {
-    width: 48%;
-    height: 80vh;
-    border: 1px solid #ea9c52;
-    border-radius: 5px;
-  }
-  
+.sidebar {
+  width: 200px;
+  background-color: #88bdf2;
+  color: #384959;
+  padding: 20px;
+  height: 100vh;
+}
+
+.sidebar h2 {
+  margin-top: 40%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.sidebar button {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 20%;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #384959;
+  color: #bdddfc;
+  cursor: pointer;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #384959;
+
+  color: #bdddfc;
+  border-radius: 5px;
+  padding: 20px;
+  width: 48%;
+  text-align: center;
+  height: 10% !important;
+}
+
+.weather-map {
+  display: flex;
+  justify-content: space-around;
+  height: 80vh;
+}
+
+.weather {
+  background-image: url("https://img.freepik.com/free-vector/cloud-background-pastel-paper-cut-design-vector_53876-135919.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 48%;
+  border-radius: 5px;
+  padding: 20px;
+  height: 80vh;
+}
+
+.weather h1 {
+  margin-bottom: 20px;
+}
+
+#weatherInfo {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  height: 80vh;
+}
+
+.map {
+  width: 48%;
+  height: 80vh;
+  border-radius: 5px;
+}
+
