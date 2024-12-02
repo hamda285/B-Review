@@ -46,21 +46,21 @@ document.addEventListener('DOMContentLoaded', () => {
         businessNameContainer.innerText = "Business Name not found.";
     }
 
-        // Star rating functionality
-        allStars.forEach((star, idx) => {
-            star.addEventListener('click', function() {
-                ratingValue.value = idx + 1; // Set rating value
-                allStars.forEach((s, i) => {
-                    s.classList.toggle('bxs-star', i <= idx);
-                    s.classList.toggle('bx-star', i > idx);
-                });
+    // Star rating functionality
+    allStars.forEach((star, idx) => {
+        star.addEventListener('click', function () {
+            ratingValue.value = idx + 1; // Set rating value
+            allStars.forEach((s, i) => {
+                s.classList.toggle('bxs-star', i <= idx);
+                s.classList.toggle('bx-star', i > idx);
             });
         });
+    });
 
-           // Handle form submission
+    // Handle form submission
     reviewForm.addEventListener('submit', (event) => {
         event.preventDefault(); // Prevent default form submission
-        
+
         const rating = ratingValue.value;
         const opinion = document.getElementById('tArea').value;
 
@@ -74,9 +74,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Show confirmation alert
         alert(`Thank you for your review!\nRating: ${rating} Star(s)\nComment: ${opinion}`);
-        
+
         // Optionally, redirect to the testimonial page
         window.location.href = '../html/comments.html';  // Redirect to testimonial page
     });
 });
+
 
