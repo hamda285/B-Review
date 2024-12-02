@@ -54,3 +54,13 @@
       flex-direction: column;
       text-align: center;
     }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+        display: none; /* Hide the nav items by default */
+      }
+    
+      nav ul.active {
+        display: block; /* Show when 'active' class is added */
+      }
