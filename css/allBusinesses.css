@@ -181,6 +181,10 @@ header h1 {
 
 /* Tablet Portrait (screens ≤ 768px) */
 @media screen and (max-width: 768px) {
+    header {
+        padding: 10px 0;
+        height: 80px;
+    }
 
 
 }
