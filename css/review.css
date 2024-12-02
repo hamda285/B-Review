@@ -23,4 +23,16 @@
         font-size: 1.8rem;
         margin-left: 20%;
       }
-    
+      .user-info {
+        position: absolute;
+        right: 5%;
+        top: 15px;
+        color: #384959;
+        display: flex;
+        align-items: center;
+      }
+      
+      .user-info #username-display {
+        margin-right: 10px;
+        font-size: 1.2rem;
+      }
