@@ -56,3 +56,27 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
             });
         });
+
+           // Handle form submission
+    reviewForm.addEventListener('submit', (event) => {
+        event.preventDefault(); // Prevent default form submission
+        
+        const rating = ratingValue.value;
+        const opinion = document.getElementById('tArea').value;
+
+        // Save review data to localStorage
+        const reviewData = {
+            rating: rating,
+            opinion: opinion,
+            business: businessName
+        };
+        localStorage.setItem('userReview', JSON.stringify(reviewData));
+
+        // Show confirmation alert
+        alert(`Thank you for your review!\nRating: ${rating} Star(s)\nComment: ${opinion}`);
+        
+        // Optionally, redirect to the testimonial page
+        window.location.href = '../html/comments.html';  // Redirect to testimonial page
+    });
+});
+
