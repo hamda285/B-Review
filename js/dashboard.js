@@ -1,4 +1,27 @@
 
+
+//handle sidebar buttons
+const home = document.getElementById("home")
+const makeReview = document.getElementById("makeReview")
+const logOutBtn = document.getElementById("logout")
+
+//home
+home.addEventListener("click", () =>{
+    window.location.href ="../index.html"
+})
+
+//MakeReview
+makeReview.addEventListener("click", () =>{
+    window.location.href ="../html/allBusinesses.html"
+})
+
+//Logout
+logOutBtn.addEventListener('click', () => {
+    localStorage.removeItem('currentUser'); 
+    window.location.href = "../html/login.html";
+});
+
+//dashboard
 document.addEventListener('DOMContentLoaded', () => {
     // Load user data from local storage
     const currentUser = JSON.parse(localStorage.getItem('currentUser'));
@@ -8,10 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = 'login.html';
     }
 
-    // total user
-    const totalUsers = 100;
-    //total business
-    const totalBusinesses = 50;
+    // Simulated user and business data (replace with actual logic to get counts)
+    const totalUsers = 100; // Replace with your logic to get the total users
+    const totalBusinesses = 50; // Replace with your logic to get the total businesses
 
 
     // Set total users and businesses
@@ -59,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Calling fetchWeather to get data
     fetchWeather();
 
-    // initializing the map for Mogadishu
+    // Initialize the map for Mogadishu
     const map = L.map('map').setView([2.0459, 45.3480], 12); // Coordinates for Mogadishu
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -71,21 +93,4 @@ document.addEventListener('DOMContentLoaded', () => {
         .bindPopup('Mogadishu, Somalia')
         .openPopup();
 
-    // Handle back home button
-    document.getElementById('makeReview').addEventListener('click', () => {
-        window.location.href = '../html/index.html'; // Redirect to index.html
-    });
-
-    // Handle Make Review button click
-    document.getElementById('makeReview').addEventListener('click', () => {
-        window.location.href = '../html/allBusinesses.html'; // Redirect to allBusinesses.html
-    });
-
-    // Handle Logout button 
-    document.getElementById('logout').addEventListener('click', () => {
-        localStorage.removeItem('currentUser'); // Remove user data
-        window.location.href = 'login.html'; // Redirect to login page
-    });
 });
-
-
