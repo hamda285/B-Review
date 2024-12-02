@@ -129,3 +129,18 @@ header h1 {
   resize: none;
   margin-bottom: 1rem;
 }
+
+.btn-group {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .btn-group .btn {
+    background-color: #384959;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+  }
