@@ -257,10 +257,9 @@ header h1 {
 
     .pagination button {
         padding: 8px 12px;
-        font-size: 14px;
+        font-size: 1rem;
         margin-bottom: 40px;
     }
-
   
 }
 
@@ -329,7 +328,8 @@ header h1 {
 
     .pagination button {
         padding: 8px 12px;
-        font-size: 12px;
+        font-size: 1rem;
+        margin-bottom: 20px;
     }
 
     .card h2 {
