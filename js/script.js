@@ -16,47 +16,62 @@ signinBtn.addEventListener("click", () => {
 });
 
 
-// Example user reviews stored in localStorage (you can later replace this with dynamic data from your app)
+// Example user reviews from local storage
 const reviews = [
     {
-        username: "John Doe",
-        business: "Silver Coffee",
+        username: "Jaamac",
+        business: "SILVER COFFE &RESTAURANT",
         rating: 5,
-        opinion: "Amazing coffee and great ambiance! Will definitely visit again.",
+        opinion: "Amazing coffee and and hotel great ambiance! Will definitely visit again.",
         image: "https://media.istockphoto.com/id/1433039224/photo/blue-user-3d-icon-person-profile-concept-isolated-on-white-background-with-social-member.webp?a=1&b=1&s=612x612&w=0&k=20&c=ljAXrxoZFwNvTsBgHXNqiD4-AL-SA9pEEqEzOKiCXQY="
     },
     {
-        username: "Jane Smith",
-        business: "Bakery Delight",
+        username: "Siham",
+        business: "AKRAM SWEETS",
         rating: 4,
         opinion: "Delicious pastries, but the service could be better.",
         image: "https://media.istockphoto.com/id/1433039224/photo/blue-user-3d-icon-person-profile-concept-isolated-on-white-background-with-social-member.webp?a=1&b=1&s=612x612&w=0&k=20&c=ljAXrxoZFwNvTsBgHXNqiD4-AL-SA9pEEqEzOKiCXQY="
     },
     {
-        username: "Emma Brown",
-        business: "Bookstore XYZ",
-        rating: 3,
+        username: "Ali",
+        business: "ABDIWAHID BOOKSHOP",
+        rating: 2,
         opinion: "Nice selection of books, but the prices are a bit high.",
         image: "https://media.istockphoto.com/id/1433039224/photo/blue-user-3d-icon-person-profile-concept-isolated-on-white-background-with-social-member.webp?a=1&b=1&s=612x612&w=0&k=20&c=ljAXrxoZFwNvTsBgHXNqiD4-AL-SA9pEEqEzOKiCXQY="
     },
     {
-        username: "Hamma",
-        business: "Bookstore XYZ",
+        username: "Hanan",
+        business: "KALKAAL",
         rating: 3,
-        opinion: "Nice selection of books, but the prices are a bit high.",
+        opinion: "Nice hospital of the city, but the prices are a bit high.",
         image: "https://media.istockphoto.com/id/1433039224/photo/blue-user-3d-icon-person-profile-concept-isolated-on-white-background-with-social-member.webp?a=1&b=1&s=612x612&w=0&k=20&c=ljAXrxoZFwNvTsBgHXNqiD4-AL-SA9pEEqEzOKiCXQY="
     },
     {
-        username: "Emma Brown",
-        business: "Bookstore XYZ",
-        rating: 3,
-        opinion: "Nice selection of books, but the prices are a bit high.",
+        username: "Faatima",
+        business: "SOMCITY STORE",
+        rating: 1,
+        opinion: "Nice shop of of shopping, but the service could be better.",
         image: "https://media.istockphoto.com/id/1433039224/photo/blue-user-3d-icon-person-profile-concept-isolated-on-white-background-with-social-member.webp?a=1&b=1&s=612x612&w=0&k=20&c=ljAXrxoZFwNvTsBgHXNqiD4-AL-SA9pEEqEzOKiCXQY="
     },
     {
-        username: "Hamma",
-        business: "Bookstore XYZ",
-        rating: 3,
+        username: "Isma'il",
+        business: "Bookstore",
+        rating: 1,
+        opinion: "Nice selection of books, but the prices are a bit high.",
+        image: "https://media.istockphoto.com/id/1433039224/photo/blue-user-3d-icon-person-profile-concept-isolated-on-white-background-with-social-member.webp?a=1&b=1&s=612x612&w=0&k=20&c=ljAXrxoZFwNvTsBgHXNqiD4-AL-SA9pEEqEzOKiCXQY="
+    },
+
+    {
+        username: "Saadak",
+        business: "BEYDAN COFFE",
+        rating: 5,
+        opinion: "Best coffe of the city, and better service.",
+        image: "https://media.istockphoto.com/id/1433039224/photo/blue-user-3d-icon-person-profile-concept-isolated-on-white-background-with-social-member.webp?a=1&b=1&s=612x612&w=0&k=20&c=ljAXrxoZFwNvTsBgHXNqiD4-AL-SA9pEEqEzOKiCXQY="
+    },
+    {
+        username: "Anisa",
+        business: "ABDIWAHID BOOKSHOP",
+        rating: 2,
         opinion: "Nice selection of books, but the prices are a bit high.",
         image: "https://media.istockphoto.com/id/1433039224/photo/blue-user-3d-icon-person-profile-concept-isolated-on-white-background-with-social-member.webp?a=1&b=1&s=612x612&w=0&k=20&c=ljAXrxoZFwNvTsBgHXNqiD4-AL-SA9pEEqEzOKiCXQY="
     }
