@@ -45,3 +45,14 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         businessNameContainer.innerText = "Business Name not found.";
     }
+
+        // Star rating functionality
+        allStars.forEach((star, idx) => {
+            star.addEventListener('click', function() {
+                ratingValue.value = idx + 1; // Set rating value
+                allStars.forEach((s, i) => {
+                    s.classList.toggle('bxs-star', i <= idx);
+                    s.classList.toggle('bx-star', i > idx);
+                });
+            });
+        });
