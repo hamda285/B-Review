@@ -46,3 +46,10 @@
         border-radius: 5px;
         cursor: pointer;
       }
+
+      .user-info #logout-button:hover {
+        background-color: #BDDDFC;
+        color: #384959;
+        border: 1px solid #384959;
+      }
+      
