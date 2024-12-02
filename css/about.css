@@ -14,3 +14,11 @@
     text-align: center;
   }
   
+  .about h2,
+.mission h3,
+.benefits h3,
+.contact h3 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #88bdf2;
+}
