@@ -4,7 +4,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/dugsiiyeinc/designer">
+  <a href="https://github.com/dugsiiyeinc/B-Review/tree/main">
     <h1>BReview</h1>
   </a>
 
