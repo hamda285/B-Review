@@ -177,3 +177,11 @@ header h1 {
     color: #384959;
 }
 
+/* ================= Responsive Styles ================= */
+
+/* Tablet Portrait (screens ≤ 768px) */
+@media screen and (max-width: 768px) {
+
+
+}
+
