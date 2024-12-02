@@ -1,0 +1,19 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+      background-color: #88bdf2;
+      padding: 15px 0;
+      top: 0;
+      height: 80px;
+      position: fixed;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
