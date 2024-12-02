@@ -68,4 +68,15 @@
         position: fixed;
         width: 100%;
       }
+
+      .wrapper {
+        background-color: #88bdf2;
+        padding: 2rem;
+        max-width: 900px;
+        width: 100vw;
+        border-radius: 0.75rem;
+        box-shadow: 0 0 3px #384959;
+        text-align: center;
+      }
+      
       
