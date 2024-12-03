@@ -3,7 +3,7 @@ const loginForm = document.querySelector('#loginForm');
 const emailInput = document.querySelector('#email');
 const passwordInput = document.querySelector('#password');
 
-//Add login form
+// Add event listener for the login form
 loginForm.addEventListener('submit', (e) => {
     e.preventDefault(); // Prevent default form submission
 
@@ -21,7 +21,9 @@ loginForm.addEventListener('submit', (e) => {
 
     // Store current user in local storage
     localStorage.setItem('currentUser', JSON.stringify(user));
-
+   
     //Redirect to dashboard after login
     window.location.href = '../html/dashboard.html';
+   
 });
+
