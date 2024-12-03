@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/dugsiiyeinc/designer">
-    <h1>BReview</h1>
+    <h1>BUsiness Review</h1>
   </a>
 
   <h3 align="center">Bussines Review</h3>
@@ -21,7 +21,8 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about">About The Project</a>
+      <a href="./index.html">About The Project</a>
+      <a href="./html/about.html">About The Project</a>
       <ul>
         <li><a href="#Technologies-Used">Technologies Used</a></li>
       </ul>
@@ -50,11 +51,10 @@
 
 ## 2. User Management
 **User Registration/Login**: Allow users to create accounts and log in.
-**User Profiles**: Maintain user information and preferences.
+
 
 ## 3. Search and Filter
 **Search Functionality**: Search for businesses by name.
-**Filter Options**: Filter businesses based on various criteria (e.g., by genre, author, or rating). ---dib an ufiirinaa
 
 ## 4. Business Details View
 **Detailed View:** A dedicated page for each business displaying detailed information, including a summary, cover image, and reviews and detail.
@@ -64,18 +64,17 @@
 **User Reviews**: Allow users to submit reviews and ratings for businesses.
 **Average Ratings**: Display average ratings for each business based on user submissions.
 
+## 6. Dashboard Design
+**Summary**: Summary of the project.
+
 ## 6. Responsive Design
 **Mobile-Friendly**: Ensure the our project interface works well on different screen sizes.
 
 ## 7. Data Persistence
-**Local Storage**: Use local storage for a simple project or integrate a database for more complex needs.
+**Local Storage**: Use local storage for a simple project.
 
-## 8. Admin Panel(user authorities)
-**Admin Features**: Allow admins to manage businesses and users, including adding or removing businesses and moderating reviews.
-
-
-  ## 9. API Integration
-**External API**: we use map or other api to complete requirement of the project
+## 8. API Integration
+**External API**: we use map and weather api to complete requirement of the project.
 
 ---
 <br>
@@ -92,10 +91,9 @@ List and explain the tools and technologies you used in the project.
 - **HTML**: For structuring the content.
 - **CSS**: For styling and layout.
 - **JavaScript**: For dynamic functionality and interactivity.
-- **API Integration**: Describe the API(s) you integrated and how they enhance your project.
----
-
-
+- **API Integration**: we use two api to enhance our project requirement.
+- **API Integration**: we use two api to enhance our project requirement.
+- **Local Storage**: we use as backend to store data.
 
 <h1>Team-members</h1>
 <br><br>
@@ -103,14 +101,55 @@ List and explain the tools and technologies you used in the project.
 T6 || GE
 <br>
 
- - Tasnim Kulle
  - Hamda 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
----
-<!-- 
-<h1>Acknowledgments</h1> -->
+
+Business-Review
+├── html/
+│   ├── index.html            # Home Page
+│   ├── about.html            # About Page
+│   ├── contactUs.html        # Contact Page
+│   ├── categories.html       # Categories Page
+│   ├── allBusinesses.html    # Business Detail Page
+│   ├── dashboard.html        # Dashboard Page
+│   ├── review.html           # review Page
+│   ├── comments.html         # Comment Page
+│   ├── logIn.html            # Login Page
+│   ├── UserReg.html          # User Registration Page
+
+├── css/
+│   ├── style.css              # Main style
+│   ├── about.css              # About page style
+│   ├── contactUs.css          # Contact page style
+│   ├── categories.css         # Categories page style
+│   ├── allBusinesses.css      # Business detail page style
+│   ├── dash.css               # dashboard style
+│   ├── review.css             # Review page style
+│   ├── comments.css           # comments page style
+│   └── footer.css             # Footer style
+│   └── userReg.css            # User Registration style
+│   └── logIn.css              # LogIn styles
+│   
+
+├── js/
+│   ├── script.js            # Main index functionality
+│   ├── categories.js        # Categories functionality
+│   ├── allBusinesses.js     # Business detail page functionality
+│   ├── dashboard.js         # Dashboard functionality
+│   ├── review.js            # Review Business functionality
+│   ├── comments.js          # Comments visitors functionality
+│   ├── userReg.js           # Login page functionality
+│   ├── logIn.js       # Signup page functionality
+│   ├── register.js       # Signup page functionality
+   
+└── images/               # Images folder
+└── data/              
+    |── data.json            # JSON file serving as API for business data
+└── style.css                # Main CSS styles 
+├── index.html               # Home Page
+
 
 
 

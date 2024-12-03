@@ -61,28 +61,28 @@ header .header-nav ul li a:hover {
 }
 
 
-header #signinBtn {
+#signinBtn {
+    font-weight: 500;
+    font-size: 1rem;
     background: #384959;
-    color: #fff;
+    color: #BDDDFC;
     border: none;
+    border-radius: 5px;
     padding: 10px 10px;
     cursor: pointer;
-    font-weight: 600;
-    font-size: 1rem;
-    border-radius: 5px;
     margin-left: 10px;
-}
-
-header #signinBtn i {
-    margin-left: 10px;
-    /* color: #bdddfc !important; */
-}
-
-header button:hover {
+  }
+  
+  .fa-user {
+    margin-left: 0;
+  }
+  
+  button:hover {
     background-color: #384959;
     color: #bdddfc;
     border: 1px solid #bdddfc;
-}
+  }
+  
 
 /* Hamburger Icon */
 .hamburger {
@@ -202,7 +202,7 @@ header button:hover {
     margin-left: 7px;
 }
 
-/* Responsive Design */
+/* =======Responsive Design============== */
 @media screen and (max-width: 768px) {
     header .container {
         flex-direction: column;
@@ -220,6 +220,7 @@ header button:hover {
         width: 100%;
         text-align: center;
         margin-top: 10px;
+        
     }
 
     header .header-nav.active {
