@@ -14,7 +14,7 @@ if (currentUser) {
 // Logout functionality
 logoutButton.addEventListener('click', () => {
     localStorage.removeItem('currentUser'); // Clear current user
-    window.location.href = '../html/logIn.html'; // Redirect to login page
+    window.location.href = '../html/login.html'; // Redirect to login page
 });
 
 // Prevent navigating back to the login page after logout
