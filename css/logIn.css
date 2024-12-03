@@ -1,70 +1,86 @@
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin-top: 0;
   padding: 0;
   font-family: "Sen", sans-serif;
 }
 
 /* ===============login=============== */
 .containerLogIn {
-  width: 100%;
-  height: 100vh;
-  background-color: #384959;
+width: 100%;
+height: 100vh;
 }
 
 #loginForm {
-  width: 350px;
-  height: 450px;
-  background-color: #88bdf2;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 10px;
-  padding: 25px;
-  box-shadow: 0 0 4px #bdddfc;
+width: 350px;
+height: 450px;
+background-color: #88BDF2;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+border-radius: 10px;
+padding: 25px;
+box-shadow: 0 0 4px #BDDDFC;
 }
 
 .containerLogIn #loginForm h1 {
-  font-weight: bold;
-  color: #384959;
-  text-align: center;
-  font-size: 2rem;
-  line-height: 24px;
-  padding: 10px;
+font-weight: bold;
+color: #384959;
+text-align: center;
+font-size: 2rem;
+line-height: 24px;
+padding: 10px;
 }
 
 #loginForm input {
-  width: 100%;
-  height: 35px;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #384959;
-  font-size: 15px;
-  letter-spacing: 1px;
-  margin-top: 30px;
+width: 100%;
+height: 35px;
+background: transparent;
+border: none;
+border-bottom: 1px solid #384959;
+font-size: 15px;
+letter-spacing: 1px;
+margin-top: 30px;
 }
 
 #loginForm input:focus {
-  outline: none;
+outline: none;
 }
 
 ::placeholder {
-  color: #fff;
+color: #fff;
 }
 
 .login {
-  width: 250px;
-  height: 40px;
-  font-size: 1rem;
-  background: #384959;
-  color: #bdddfc;
-  border: none;
-  margin-top: 30px;
-  margin-left: 25px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.4s ease;
+width: 250px;
+height: 40px;
+font-size: 1rem;
+background: #384959;
+color: #BDDDFC;
+border: none;
+margin-top: 30px;
+margin-left: 25px;
+border-radius: 10px;
+cursor: pointer;
+transition: 0.4s ease;
+}
+
+.login:hover {
+background-color: #BDDDFC;
+border: 2px solid #384959;
+color: #384959;
+}
+
+#loginForm .link {
+font-size: 17px;
+padding-top: 20px;
+text-align: center;
+}
+
+#loginForm .link a {
+text-decoration: none;
+color: #fff;
 }
 
 /* Mobile Devices (<= 767px) */
