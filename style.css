@@ -9,68 +9,69 @@
 header {
     background-color: #88bdf2;
     padding: 20px 0;
-}
-
-header .container {
+  }
+  
+  header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
-}
-
-header h1 {
-    color: #384959;
+    margin: 0 auto;
+  }
+  
+  header h1 {
     font-weight: bold;
     font-size: 1.5rem;
+    color: #384959;
     flex-grow: 1;
     margin-left: 15px;
-}
-
-
-header .header-nav {
+  }
+  
+  header .header-nav {
+    display: flex;
     flex-grow: 2;
     text-align: center;
-    display: flex;
     justify-content: center;
-}
-
-header .header-nav ul {
+  }
+  
+  header .header-nav ul {
     display: flex;
     gap: 30px;
     margin-top: 10px;
     list-style: none;
-}
-
-header .header-nav ul li {
+  }
+  
+  header .header-nav ul li {
     display: inline-block;
-}
-
-header .header-nav ul li a {
+  }
+  
+  header .header-nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
     font-size: 1rem;
     padding: 10px;
     transition: color 0.3s ease;
-}
-
-header .header-nav ul li a:hover {
+  }
+  
+  header .header-nav ul li a:hover {
     background-color: #384959;
     border-radius: 5px;
     padding: 10px;
-}
-
-
-#signinBtn {
-    font-weight: 500;
-    font-size: 1rem;
+  }
+  
+  
+  #signinBtn {
     background: #384959;
     color: #BDDDFC;
     border: none;
-    border-radius: 5px;
     padding: 10px 10px;
     cursor: pointer;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 5px;
     margin-left: 10px;
+    text-transform: capitalize;
   }
   
   .fa-user {
@@ -83,21 +84,20 @@ header .header-nav ul li a:hover {
     border: 1px solid #bdddfc;
   }
   
-
-/* Hamburger Icon */
-.hamburger {
+  /* Hamburger Icon*/
+  .hamburger {
     display: none;
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
-}
-
-.hamburger .bar {
+  }
+  
+  .hamburger .bar {
     width: 25px;
     height: 4px;
     background-color: #384959;
     border-radius: 5px;
-}
+  } 
 
 /* Hero Section */
 #hero {
