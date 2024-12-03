@@ -15,7 +15,7 @@ if (currentUser) {
 //Logout functionality
 logoutButton.addEventListener('click', () => {
   localStorage.removeItem('currentUser'); // Clear current user
-  window.location.href = '../html/login.html'; // Redirect to login page
+  window.location.href = '../html/logIn.html'; // Redirect to login page
 });
 
 // revent navigating back to the login page after logout
@@ -54,12 +54,11 @@ if (reviewData && currentUser1) {
 
 //==================== Slider Logic ====================
 
-let i = 0;
-let j = comments.length; // Total number of comments
+// let i = 0;
+// let j = comments.length; // Total number of comments
 
 let commentContainer = document.getElementById("comment-container");
-let nextBtn = document.getElementById("next");
-let prevBtn = document.getElementById("prev");
+
 
 // Show the first comment
 const displayComment = () => {
@@ -99,21 +98,34 @@ const getStarRating = (rating) => {
   return stars;
 };
 
-// Move to the next comment
-nextBtn.addEventListener("click", () => {
-  if (j > 1) {  // Only move to the next comment if there are more than one
-    i = (i + 1) % j;  // Move to the next comment, cycle back to the first comment
-    displayComment();
-  }
-});
+// // Move to the next comment
+// nextBtn.addEventListener("click", () => {
+//   if (j > 1) {  // Only move to the next comment if there are more than one
+//     i = (i + 1) % j;  // Move to the next comment, cycle back to the first comment
+//     displayComment();
+//   }
+// });
 
-// Move to the previous comment
-prevBtn.addEventListener("click", () => {
-  if (j > 1) {  // Only move to the previous comment if there are more than one
-    i = (i - 1 + j) % j;  // Move to the previous comment, cycle back to the last comment
-    displayComment();
-  }
-});
+// // Move to the previous comment
+// prevBtn.addEventListener("click", () => {
+//   if (j > 1) {  // Only move to the previous comment if there are more than one
+//     i = (i - 1 + j) % j;  // Move to the previous comment, cycle back to the last comment
+//     displayComment();
+//   }
+// });
+
+
+function scrollRightSection(next) {
+  let nextBtn = document.getElementById(next);
+  nextBtn.scrollBy({ left: 300, behavior: "smooth" });
+}
+
+function scrollLeftSection(prev) {
+  let prevBtn = document.getElementById(prev);
+  prevBtn.scrollBy({ left: -300, behavior: "smooth" });
+}
+
+
 
 //Initial display of the comment
 window.onload = displayComment;
