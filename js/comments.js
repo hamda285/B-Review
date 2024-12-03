@@ -5,21 +5,22 @@ const currentUser = JSON.parse(localStorage.getItem('currentUser'));
 const usernameDisplay = document.getElementById('username-display');
 const logoutButton = document.getElementById('logout-button');
 
-// Display username if logged in
+//Display username if logged in
 if (currentUser) {
   usernameDisplay.textContent = `${currentUser.username}`;
 } else {
   usernameDisplay.textContent = ''; // Hide if not logged in
 }
 
-// Logout functionality
+//Logout functionality
 logoutButton.addEventListener('click', () => {
   localStorage.removeItem('currentUser'); // Clear current user
-  window.location.href = './html/login.html'; // Redirect to login page
+  window.location.href = '../html/login.html'; // Redirect to login page
 });
 
-// Prevent navigating back to the login page after logout
+// revent navigating back to the login page after logout
 window.addEventListener('popstate', (event) => {
+  event.preventDefault();
   if (!currentUser) {
     alert("Please log in again.");
     window.location.href = './html/login.html'; // Redirect to login page 
@@ -41,7 +42,7 @@ const comments = [];
 // Check if the reviewData exists and has the necessary structure
 if (reviewData && currentUser1) {
   const newComment = {
-    name: currentUser1.username, 
+    name: currentUser1.username,
     image: "https://media.istockphoto.com/id/1389898237/photo/cute-girl-iconic-character-with-glasses-3d-rendering.jpg?s=612x612&w=0&k=20&c=dFG5lmBicdNe33IrFgr8YYrX1rF38DljWS7g84Q78HI=", // Default profile image
     business: reviewData.business,
     rating: reviewData.rating, // Rating from localStorage

@@ -1,6 +1,5 @@
 
 //====================header.js==================
-// Load current user information from local storage
 const currentUser = JSON.parse(localStorage.getItem('currentUser'));
 const usernameDisplay = document.getElementById('username-display');
 const logoutButton = document.getElementById('logout-button');
@@ -15,7 +14,7 @@ if (currentUser) {
 // Logout functionality
 logoutButton.addEventListener('click', () => {
     localStorage.removeItem('currentUser'); // Clear current user
-    window.location.href = 'login.html'; // Redirect to login page
+    window.location.href = '../html/login.html'; // Redirect to login page
 });
 
 // Prevent navigating back to the login page after logout
@@ -75,8 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Show confirmation alert
         alert(`Thank you for your review!\nRating: ${rating} Star(s)\nComment: ${opinion}`);
 
-        // Optionally, redirect to the testimonial page
-        window.location.href = '../html/comments.html';  // Redirect to testimonial page
+        //redirect to the testimonial/comments page
+        window.location.href = '../html/comments.html';
     });
 });
 

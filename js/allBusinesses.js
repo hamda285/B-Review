@@ -18,7 +18,7 @@ if (window.location.pathname.includes("allBusinesses.html")) {
         displayCards(currentPage);
         updatePagination();
     } else {
-        fetch('/data/data.json')
+        fetch('../data/businessData.json')
             .then(response => response.json())
             .then(data => {
                 businessData = data;
@@ -134,6 +134,6 @@ if (currentUser) {
 
 //Logout
 logoutButton.addEventListener('click', () => {
-    localStorage.removeItem('currentUser'); // Clear current user
+    localStorage.removeItem('currentUser'); // remove current user
     window.location.href = '../html/logIn.html'; // Go to login page
 });
