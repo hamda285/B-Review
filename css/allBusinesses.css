@@ -30,7 +30,7 @@ header h1 {
     position: absolute;
     right: 5%;
     top: 15px;
-    color: #fff;
+    color: #384959;
     display: flex;
     align-items: center;
 }
@@ -80,8 +80,8 @@ header h1 {
 #search-btn {
     padding: 10px 15px;
     background-color: #384959;
-    color: #BDDDFC;
-    border: 1px solid #BDDDFC;
+    color: #fff;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
 }
