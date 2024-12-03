@@ -1,4 +1,4 @@
-/* =============Dhashboard============ */
+/* ============= Dashboard ============ */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,9 +12,10 @@
   gap: 30px;
 }
 
+/* Sidebar */
 .sidebar {
   width: 200px;
-  background-color: #88bdf2;
+  background-color: #88BDF2;
   color: #384959;
   padding: 20px;
   height: 100vh;
@@ -36,10 +37,11 @@
   border: none;
   border-radius: 5px;
   background-color: #384959;
-  color: #bdddfc;
+  color: #BDDDFC;
   cursor: pointer;
 }
 
+/* Main Content */
 .main-content {
   flex-grow: 1;
   padding: 20px;
@@ -53,8 +55,7 @@
 
 .card {
   background-color: #384959;
-
-  color: #bdddfc;
+  color: #BDDDFC;
   border-radius: 5px;
   padding: 20px;
   width: 48%;
@@ -95,3 +96,113 @@
   border-radius: 5px;
 }
 
+/* ============= Responsive Design for Mobile and Tablets ============ */
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .sidebar h2 {
+    margin-top: 10%;
+  }
+
+  .sidebar button {
+    margin-top: 10%;
+  }
+
+  .main-content {
+    padding: 10px;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .weather-map {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .weather,
+  .map {
+    width: 100%;
+    height: auto; 
+  }
+
+  #weatherInfo {
+    font-size: 2rem;
+  }
+}
+
+/* Tablet (601px to 768px) */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 15px;
+    height: auto;
+  }
+
+  .sidebar h2 {
+    margin-top: 10%;
+    font-size: 2rem;
+  }
+
+  .sidebar button {
+    margin-top: 10%;
+    padding: 25px;
+    font-size: 1.5rem;
+  }
+
+  .main-content {
+    padding: 15px;
+  }
+
+  .cards {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .weather-map {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .weather,
+  .map {
+    width: 100%;
+    height: auto; 
+  }
+
+  #weatherInfo {
+    font-size: 1.75rem;
+  }
+}
