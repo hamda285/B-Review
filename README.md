@@ -4,8 +4,13 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
+<<<<<<< HEAD
   <a href="https://github.com/dugsiiyeinc/designer">
     <h1>BUsiness Review</h1>
+=======
+  <a href="https://github.com/dugsiiyeinc/B-Review/tree/main">
+    <h1>BReview</h1>
+>>>>>>> 47e4eab48aa873681d14992d7be42f09522e6303
   </a>
 
   <h3 align="center">Bussines Review</h3>
