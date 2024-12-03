@@ -12,7 +12,7 @@ const signinBtn = document.getElementById("signinBtn");
 // Add click event listener to the SignIn button
 signinBtn.addEventListener("click", () => {
     // Redirect to login page
-    window.location.href = "../html/login.html";
+    window.location.href = "./html/logIn.html";
 });
 
 
