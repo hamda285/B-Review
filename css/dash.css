@@ -88,6 +88,7 @@
   font-size: 2rem;
   line-height: 3.5rem;
   height: 80vh;
+  color: #384959;
 }
 
 .map {
@@ -151,7 +152,7 @@
   }
 }
 
-/* Tablet (601px to 768px) */
+/* Tablet*/
 @media screen and (max-width: 768px) {
   .container {
     flex-direction: column;

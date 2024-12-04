@@ -167,7 +167,7 @@ header h1 {
     border: 1px solid #384959;
   }
   
-  /* Mobile and Tablet Media Queries */
+  /* =======Responsive Part=======*/
   
   /* For Mobile */
   @media screen and (max-width: 480px) {
@@ -270,7 +270,7 @@ header h1 {
     }
   }
   
-  /* For Larger Tablets (max-width: 1024px) */
+  /* large tablets */
   @media screen and (max-width: 1024px) {
     header h1 {
       font-size: 1.8rem;

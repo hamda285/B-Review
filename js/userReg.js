@@ -7,39 +7,38 @@ const confirmPassword = document.getElementById('confirmPassword');
 const error = document.getElementById('error');
 const success = document.getElementById('success');
 
-// Event listener for form submission
 userRegistrationForm.addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent default form submission
 
-    clearMessages(); // Clear previous messages
+    clearMessages();
 
     // Validate fields
     if (!validateUsername() || !validateEmail() || !validatePassword() || !validateConfirmPassword()) {
-        return; // Stop if any validation fails
+        return; 
     }
 
-    // Create user object and save to local storage
+    // Creating user then to local storage
     const user = {
         username: username.value.trim(),
         email: email.value.trim(),
-        password: password.value // Note: In a real app, do not store plain passwords!
+        password: password.value 
     };
 
-    // Check for existing users
+    //existing users
     const users = JSON.parse(localStorage.getItem('users')) || [];
     if (users.some(existingUser => existingUser.email === user.email)) {
         setError('Email already exists!');
         return;
     }
 
-    // Add new user and store it
+    //new user to localstorage
     users.push(user);
     localStorage.setItem('users', JSON.stringify(users)); 
     success.textContent = 'Registration successful!...';
     setTimeout(() => window.location.href = 'login.html', 2000);
 });
 
-// Clear error and success messages
+// Clear prev messages
 function clearMessages() {
     error.textContent = '';
     success.textContent = '';
@@ -82,7 +81,7 @@ function validateConfirmPassword() {
     return true;
 }
 
-// Set error message
+//error message
 function setError(message) {
     error.textContent = message;
 }
