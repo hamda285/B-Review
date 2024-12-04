@@ -1,6 +1,6 @@
 
 
-//handle sidebar buttons
+//sidebar buttons
 const home = document.getElementById("home")
 const makeReview = document.getElementById("makeReview")
 const logOutBtn = document.getElementById("logout")
@@ -23,20 +23,19 @@ logOutBtn.addEventListener('click', () => {
 
 //dashboard
 document.addEventListener('DOMContentLoaded', () => {
-    // Load user data from local storage
+  
     const currentUser = JSON.parse(localStorage.getItem('currentUser'));
 
     // Redirect to login if not logged in
     if (!currentUser) {
-        window.location.href = 'login.html';
+        window.location.href = '../html/login.html';
     }
 
-    // Simulated user and business data (replace with actual logic to get counts)
-    const totalUsers = 100; // Replace with your logic to get the total users
-    const totalBusinesses = 50; // Replace with your logic to get the total businesses
+   
+    //total users and businesses
+    const totalUsers = 100; 
+    const totalBusinesses = 50; 
 
-
-    // Set total users and businesses
     document.getElementById('totalUsers').innerText = totalUsers;
     document.getElementById('totalBusinesses').innerText = totalBusinesses;
 
@@ -44,12 +43,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const weatherApiKey = '4b5bb59e90d6c180fd66d3662994faaf'; // Provided weather API key
     const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Mogadishu,SO&appid=${weatherApiKey}&units=metric`;
 
-    // Asynchronous function to fetch weather data
+    //fetching weather from api (i use API that display mogadisho,so weather ,sunrise, sunset, timezone and more... to full requirements)
     async function fetchWeather() {
         try {
             const response = await fetch(weatherApiUrl);
             if (!response.ok) {
-                throw new Error('Weather data not available');
+                throw new Error('Weather not available');
             }
             const data = await response.json();
             displayWeather(data);
@@ -59,9 +58,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Function to display weather data
+    //weather data
     function displayWeather(data) {
-        const { name, coord, timezone, sys, main } = data; // Destructuring to get necessary properties
+        const { name, coord, timezone, sys, main } = data; 
         const sunrise = new Date(sys.sunrise * 1000).toLocaleTimeString();
         const sunset = new Date(sys.sunset * 1000).toLocaleTimeString();
 
@@ -81,16 +80,18 @@ document.addEventListener('DOMContentLoaded', () => {
     // Calling fetchWeather to get data
     fetchWeather();
 
-    // Initialize the map for Mogadishu
-    const map = L.map('map').setView([2.0459, 45.3480], 12); // Coordinates for Mogadishu
+
+    //this will use an external API for OPENSTREETMAP, so this fetching maps data does not require Api key.
+    //NOTE: this is not requirement of the project but its my choice to fulfill eye catching of the page.
+    
+    const map = L.map('map').setView([2.0459, 45.3480], 12);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 45,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    L.marker([2.0459, 45.3480]).addTo(map) // Add a marker for Mogadishu
+    L.marker([2.0459, 45.3480]).addTo(map)
         .bindPopup('Mogadishu, Somalia')
         .openPopup();
-
 });

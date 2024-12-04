@@ -1,358 +1,352 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Sen", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Sen", sans-serif;
 }
 
 /* ==============allBusinesses page================ */
 header {
-    background-color: #88BDF2;
-    color: #fff;
-    padding: 15px 0;
-    top: 0;
-    height: 80px;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #88bdf2;
+  color: #fff;
+  padding: 15px 0;
+  top: 0;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h1 {
-    color: #384959;
-    font-weight: 700;
-    font-size: 1.8rem;
-    margin-left: 20%;
+  color: #384959;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-left: 20%;
 }
 
 .user-info {
-    position: absolute;
-    right: 5%;
-    top: 15px;
-    color: #384959;
-    display: flex;
-    align-items: center;
+  position: absolute;
+  right: 5%;
+  top: 15px;
+  color: #384959;
+  display: flex;
+  align-items: center;
 }
 
 .user-info #username-display {
-    margin-right: 10px;
-    font-size: 1.2rem;
+  margin-right: 10px;
+  font-size: 1.2rem;
 }
 
 .user-info #logout-button {
-    background-color: #384959;
-    color: #fff;
-    font-size: 1rem;
-    border: none;
-    padding: 10px 10px;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #384959;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .user-info #logout-button:hover {
-    background-color: #BDDDFC;
-    color: #384959;
-    border: 1px solid #384959;
+  background-color: #bdddfc;
+  color: #384959;
+  border: 1px solid #384959;
 }
 
 #reviews {
-    width: min(80%, 70rem);
-    margin-inline: auto;
+  width: min(80%, 70rem);
+  margin-inline: auto;
 }
 
-/*search button of all businesses */
 .search-container {
-    text-align: center;
-    margin: 30px;
+  text-align: center;
+  margin: 30px;
 }
 
 #search-input {
-    padding: 10px;
-    font-size: 16px;
-    width: 250px;
-    border-radius: 5px;
-    border: 1px solid #384959;
-    margin-top: 4rem;
-    margin-right: 10px;
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #384959;
+  margin-top: 4rem;
+  margin-right: 10px;
 }
 
 #search-btn {
-    padding: 10px 15px;
-    background-color: #384959;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px 15px;
+  background-color: #384959;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /*pagination */
 .pagination {
-    text-align: center;
+  text-align: center;
 }
 
 .pagination button {
-    background-color: #384959;
-    color: #BDDDFC;
-    border: 1px solid #BDDDFC;
-    padding: 10px 15px;
-    cursor: pointer;
-    margin: 10px 5px;
-    border-radius: 5px;
+  background-color: #384959;
+  color: #bdddfc;
+  border: 1px solid #bdddfc;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin: 10px 5px;
+  border-radius: 5px;
 }
 
 .pagination button:hover {
-    background-color: #BDDDFC;
-    color: #384959;
+  background-color: #bdddfc;
+  color: #384959;
 }
 
 .pagination button.disabled {
-    background-color: #88BDF2;
-    color: #384959;
-    cursor: not-allowed;
+  background-color: #88bdf2;
+  color: #384959;
+  cursor: not-allowed;
 }
 
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 40px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .card {
-    background-color: #384959;
-    border: 1px solid #88BDF2;
-    border-radius: 5px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.2s;
-    box-shadow: 0 0 3px #88BDF2;
-    height: auto;
-    margin-top: 10px;
-    width: 300px; 
+  background-color: #384959;
+  border: 1px solid #88bdf2;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s;
+  box-shadow: 0 0 3px #88bdf2;
+  height: auto;
+  margin-top: 10px;
+  width: 300px;
 }
 
 .card:hover {
-    transform: scale(1.01);
+  transform: scale(1.01);
 }
 
 .card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    max-height: 150px; 
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  max-height: 150px;
 }
 
 .card h2 {
-    font-weight: 700;
-    font-size: large;
-    margin-top: 10px;
-    color: #BDDDFC;
+  font-weight: 700;
+  font-size: large;
+  margin-top: 10px;
+  color: #bdddfc;
 }
 
 .card p {
-    font-weight: 200;
-    font-size: medium;
-    margin-top: 10px;
-    color: #fff;
+  font-weight: 200;
+  font-size: medium;
+  margin-top: 10px;
+  color: #fff;
 }
 
 .card button {
-    font-weight: 600;
-    background-color: #BDDDFC;
-    color: #384959;
-    border: none;
-    margin-top: 20px;
-    padding: 15px;
-    cursor: pointer;
-    border-radius: 5px;
+  font-weight: 600;
+  background-color: #bdddfc;
+  color: #384959;
+  border: none;
+  margin-top: 20px;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .card button:hover {
-    border: 1px solid #BDDDFC;
-    background-color: fff;
-    color: #384959;
+  border: 1px solid #bdddfc;
+  background-color: fff;
+  color: #384959;
 }
 
 /* ================= Responsive Styles ================= */
 
-/* Tablet Portrait (screens ≤ 768px) */
+/* Tablet*/
 @media screen and (max-width: 768px) {
+  header {
+    padding: 10px 0;
+    height: 80px;
+  }
 
-    header {
-        padding: 10px 0;
-        height: 80px;
-    }
+  header h1 {
+    font-size: 1.8rem;
+    margin-left: 5%;
+  }
 
-    header h1 {
-        font-size: 1.8rem;
-        margin-left: 5%;
-       
-    }
+  .user-info {
+    top: 10px;
+    right: 5%;
+    font-size: 0.9rem;
+  }
 
-    .user-info {
-        top: 10px;
-        right: 5%;
-        font-size: 0.9rem;
-    }
+  .user-info #username-display {
+    margin-right: 8px;
+    font-size: 1rem;
+  }
 
-    .user-info #username-display {
-        margin-right: 8px;
-        font-size: 1rem;
-    }
+  .user-info #logout-button {
+    background-color: #384959;
+    color: #bdddfc;
+    font-size: 1rem;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 8px;
+  }
 
-    .user-info #logout-button {
-        background-color: #384959;
-        color: #BDDDFC;
-        font-size: 1rem;
-        border: none;
-        padding: 12px 15px;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 8px;
-    }
+  #search-input {
+    width: 200px;
+    font-size: 14px;
+  }
 
-    #search-input {
-        width: 200px;
-        font-size: 14px;
-    }
+  #search-btn {
+    padding: 10px 15px;
+    background-color: #384959;
+    color: #bdddfc;
+    border: 1px solid #bdddfc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 
-    #search-btn {
-        padding: 10px 15px;
-        background-color: #384959;
-        color: #BDDDFC;
-        border: 1px solid #BDDDFC;
-        border-radius: 5px;
-        cursor: pointer;
-       
-    }
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
 
-    .card-container {
-        grid-template-columns: 1fr;
-        padding: 20px;
-    }
+  .card {
+    width: 85%;
+    height: auto;
+    padding: 20px;
+    margin-left: 40px;
+  }
 
-    .card{
-        width: 85%;
-        height: auto;
-        padding: 20px;
-        margin-left: 40px;
-    }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
 
-    .card img {
-        width: 100%;
-        height: auto;
-    }
-    
-    .card h2 {
-        font-size: 1.2rem;
-    }
+  .card h2 {
+    font-size: 1.2rem;
+  }
 
-    .card p {
-        font-size: 0.9rem;
-    }
+  .card p {
+    font-size: 0.9rem;
+  }
 
-    .pagination button {
-        padding: 8px 12px;
-        font-size: 1rem;
-        margin-bottom: 40px;
-    }
-  
+  .pagination button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
 }
 
-/* Mobile (screens ≤ 480px) */
+/* Mobile */
 @media screen and (max-width: 480px) {
+  header {
+    padding: 10px 0;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
-    header {
-        padding: 10px 0;
-        height: 70px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+  header h1 {
+    font-size: 1.2rem;
+    margin-right: 220px;
+    margin-top: 15px;
+  }
 
-    header h1 {
-        font-size: 1.2rem;
-        margin-right: 220px;
-        margin-top: 15px;
-    }
+  .user-info {
+    top: 5px;
+    right: 5%;
+    font-size: 0.8rem;
+  }
 
-    .user-info {
-        top: 5px;
-        right: 5%;
-        font-size: 0.8rem;
-    }
+  .search-container {
+    display: flex;
+    padding: 0 5px;
+    margin-left: 50px;
+  }
 
-    .search-container{
-        display: flex;
-        padding: 0 5px;
-        margin-left: 50px;
-    }
+  #search-input {
+    width: 180px;
+    font-size: 12px;
+    margin-top: 4rem;
+  }
 
-    #search-input {
-        width: 180px;
-        font-size: 12px;
-        margin-top: 4rem;
-    }
+  #search-btn {
+    padding: 10px 10px;
+    background-color: #384959;
+    color: #bdddfc;
+    border: 1px solid #bdddfc;
+    border-radius: 5px;
+    cursor: pointer !important;
+    height: 40px;
+    margin-top: 4rem;
+  }
 
-    #search-btn {
-        padding: 10px 10px;
-        background-color: #384959;
-        color: #BDDDFC;
-        border: 1px solid #BDDDFC;
-        border-radius: 5px;
-        cursor: pointer !important;
-        height: 40px;
-        margin-top: 4rem;
-    }
+  .card-container {
+    grid-template-columns: 1fr; 
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 15px;
+  }
 
-    .card-container {
-        grid-template-columns: 1fr; /* 1 card per row on mobile */
-        margin-right: 5%;
-        margin-left: 5%;
-        padding: 15px;
-    }
+  .card {
+    width: 100%; 
+    margin-left: 0px;
+  }
 
-    .card {
-        width: 100%; /* Ensure cards fit to the screen */
-        margin-left: 0px;
-    }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
 
-    .card img {
-        width: 100%;
-        height: auto;
-    }
+  .pagination button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
 
-    .pagination button {
-        padding: 8px 12px;
-        font-size: 1rem;
-        margin-bottom: 20px;
-    }
+  .card h2 {
+    font-size: 1rem;
+  }
 
-    .card h2 {
-        font-size: 1rem;
-    }
+  .card p {
+    font-size: 0.8rem;
+  }
 
-    .card p {
-        font-size: 0.8rem;
-    }
+  .card button {
+    padding: 12px;
+    font-size: 14px;
+  }
 
-    .card button {
-        padding: 12px;
-        font-size: 14px;
-    }
-
-    .user-info #logout-button {
-        background-color: #384959;
-        color: #BDDDFC;
-        font-size: 1rem;
-        border: none;
-        padding: 8px 10px;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 15px;
-    }
+  .user-info #logout-button {
+    background-color: #384959;
+    color: #bdddfc;
+    font-size: 1rem;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
 }

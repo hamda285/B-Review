@@ -110,7 +110,7 @@ color: #fff;
   }
 }
 
-/* Tablet Devices (768px - 1024px) */
+/* Tablet */
 @media (max-width: 1024px) {
   #loginForm {
     width: 60%;

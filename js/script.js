@@ -9,14 +9,13 @@ hamburger.addEventListener("click", () => {
 
 const signinBtn = document.getElementById("signinBtn");
 
-// Add click event listener to the SignIn button
+// siginbtn
 signinBtn.addEventListener("click", () => {
-    // Redirect to login page
-    window.location.href = "../html/login.html";
+    window.location.href = "./html/login.html";
 });
 
 
-// Example user reviews from local storage
+
 const reviews = [
     {
         username: "Jaamac",
@@ -77,16 +76,15 @@ const reviews = [
     }
 ];
 
-// Function to display the feedback dynamically
+//the feedback dynamically
 function displayTestimonials() {
     const testimonialContainer = document.querySelector(".testimonial-container");
 
-    // Loop through each review and create a testimonial card
     reviews.forEach((review) => {
         const testimonialCard = document.createElement("div");
         testimonialCard.classList.add("testimonial-card");
 
-        // Add user image, name, business, opinion, and rating
+        // testimonial card
         testimonialCard.innerHTML = `
             <div class="testimonial-img">
                 <img src="${review.image}" alt="${review.username}">
@@ -101,12 +99,12 @@ function displayTestimonials() {
             </div>
         `;
 
-        // Append the card to the container
+        // add the card to container
         testimonialContainer.appendChild(testimonialCard);
     });
 }
 
-// Function to generate star rating
+//star rating generating
 function getStarRating(rating) {
     let stars = '';
     for (let i = 0; i < 5; i++) {
@@ -119,7 +117,7 @@ function getStarRating(rating) {
     return stars;
 }
 
-// Call the function to display testimonials when the page loads
+// Calling testimonial display 
 window.onload = displayTestimonials;
 
 

@@ -12,7 +12,7 @@
   padding: 30px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 120px;
+  margin-top: 30px !important;
   border-radius: 8px;
   box-shadow: 0 0 5px #88bdf2;
 }
@@ -83,8 +83,8 @@
   border: 2px solid #384959;
 }
 
-/* ==============Responsive Design=============== */
-/* Mobile Devices (<= 767px) */
+/* ==============Responsive Part=============== */
+/* mobile */
 @media (max-width: 767px) {
   .registrationContainer {
     width: 90%;
@@ -107,7 +107,7 @@
   }
 }
 
-/* Tablet Devices (768px - 1024px) */
+/* Tablet */
 @media (max-width: 1024px) {
   .registrationContainer {
     width: 80%;
@@ -130,7 +130,7 @@
   }
 }
 
-/* Very Small Devices (<= 320px width) */
+/* small devices like smart watches */
 @media (max-width: 320px) {
   .registrationContainer {
     width: 100%;

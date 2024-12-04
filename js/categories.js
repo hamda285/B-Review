@@ -1,9 +1,10 @@
 
-//redirect to businesses page
+//redirect to allbusinesses page
 const makeReview = document.getElementById("make");
 
 makeReview.addEventListener("click", () => {
-    // Redirect to login page
+
+    //Redirect to allBusinesses page
     window.location.href = "../html/allBusinesses.html";
 });
 

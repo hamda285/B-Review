@@ -1,5 +1,5 @@
-// Global variables for handling pagination and business data
-const cardsPerPage = 8;
+
+const cardsPerPage = 8; //show every page 8 cards
 let currentPage = 1;
 let businessData = [];
 let filteredData = [];
@@ -11,7 +11,7 @@ const searchButton = document.getElementById('search-btn');
 
 //business lists
 if (window.location.pathname.includes("allBusinesses.html")) {
-    // Check if business data is in localStorage
+    // read businesses from localStorage
     if (localStorage.getItem('businessData')) {
         businessData = JSON.parse(localStorage.getItem('businessData'));
         filteredData = businessData;
@@ -31,7 +31,7 @@ if (window.location.pathname.includes("allBusinesses.html")) {
     }
 
     
-    // Function to display cards of All-business lists
+    //All-business lists
     function displayCards(page) {
         cardContainer.innerHTML = '';
 
@@ -52,7 +52,7 @@ if (window.location.pathname.includes("allBusinesses.html")) {
         }
     }
 
-      // Function to update pagination
+      // update pagination buttons
       function updatePagination() {
         paginationContainer.innerHTML = '';
         const totalPages = Math.ceil(filteredData.length / cardsPerPage);
@@ -94,7 +94,7 @@ if (window.location.pathname.includes("allBusinesses.html")) {
         paginationContainer.appendChild(nextButton);
     }
 
-      // Function to handle search
+      //search input
       function handleSearch() {
         const query = searchInput.value.toLowerCase();
         filteredData = businessData.filter(business => {
@@ -114,26 +114,26 @@ if (window.location.pathname.includes("allBusinesses.html")) {
         }
     });
 
-       // Navigate to the review page with business name as query parameter
-       window.goToReviewPage = function (businessName) {
+       // business name as query parameter
+        window.goToReviewPage = function (businessName) {
         window.location.href = `review.html?business=${encodeURIComponent(businessName)}`;
     };
 }
 
-//Load current user information from local storage
+//read current user from localstorage
 const currentUser = JSON.parse(localStorage.getItem('currentUser'));
 const usernameDisplay = document.getElementById('username-display');
 const logoutButton = document.getElementById('logout-button');
 
-// Display username if logged in
+// show user if logged in
 if (currentUser) {
     usernameDisplay.textContent = `${currentUser.username}`;
 } else {
-    usernameDisplay.textContent = ''; // Hide if not logged in
+    usernameDisplay.textContent = 'Anonymous User'; // change anonymous if it's not login
 }
 
 //Logout
 logoutButton.addEventListener('click', () => {
-    localStorage.removeItem('currentUser'); // remove current user
-    window.location.href = '../html/logIn.html'; // Go to login page
+    localStorage.removeItem('currentUser'); 
+    window.location.href = '../html/login.html'; 
 });
