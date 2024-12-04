@@ -11,14 +11,14 @@ body {
 
 header {
   background-color: #88bdf2;
-  color: #f4f4f4;
+  color: #fff;
   padding: 15px 0;
   top: 0;
   height: 80px;
   position: fixed;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between !important;
   align-items: center;
 }
 
@@ -33,7 +33,7 @@ header h1 {
   position: absolute;
   right: 5%;
   top: 15px;
-  color: #f4f4f4;
+  color: #fff;
   display: flex;
   align-items: center;
 }
@@ -61,15 +61,15 @@ header h1 {
 
 /* ==== comments ==== */
 .wrapper {
-  background-color: #f4f4f4;
+  background-color: #384959;
   position: absolute;
   width: 80vw;
-  max-width: 38em;
-  min-height: 30em;
+  max-width: 41em;
+  min-height: 35em;
   border-radius: 0.6em;
   transform: translate(-50%, -50%);
   left: 50%;
-  margin-top: 32%;
+  top: 50%;
   box-shadow: 0 1.8em 3em #384959;
   display: flex;
   flex-direction: column;
@@ -78,89 +78,47 @@ header h1 {
   padding: 20px;
 }
 
-.testimonial-card {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  border: 1px solid #384959;
-  border-radius: 8px;
+.comment-container {
   background-color: #88bdf2;
   width: 90%;
-  min-height: 30em;
-  margin-bottom: 20px;
-}
-
-.testimonial-img {
-  margin-top: 0;
-  margin-bottom: 15px;
-  margin-left: 34%;
-}
-
-.profile-img {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.testimonial-content {
-  width: 100%;
-}
-
-.testimonial-name {
-  font-weight: 700;
-  font-size: 2rem !important;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  text-align: center;
-  color: #384959;
-}
-
-.testimonial-business {
-  font-weight: 700;
-  font-size: 1.5rem !important;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  text-align: center;
-  color: #384959;
-}
-
-.testimonial-opinion {
-  font-weight: 600;
-  font-size: 1.5rem !important;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  text-align: center;
-  color: #384959;
-}
-
-.testimonial-rating {
-  font-weight: 900;
-  font-size: 1.5rem !important;
-  margin-top: 10px;
-  text-align: center;
-}
-
-.testimonial-rating i {
-  color: #384959;
-  /* filled stars color */
-  margin-right: 5px;
-}
-
-.testimonial-rating i[style="color: #ddd;"] {
-  color: #bdddfc;
-  /*color for empty stars */
-}
-
-.comment-container {
-  width: 90%;
-  height: 100%;
+  height: 50vh;
   position: relative;
   margin-top: 10px;
   margin-left: 15%;
   padding: 1.8em 1.2em;
+  margin-left: 10px !important;
 }
+
+.comment-container img {
+  width: 80px;
+  height: 90px;
+  border-radius: 50%;
+  margin-top: 60px;
+  margin-left: 220px;
+}
+
+.comment-container h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 15px;
+ text-align: center;
+}
+
+.comment-container h6{
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.comment-container p{
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
 
 /* Styling for the navigation buttons */
 .wrapper #prev,
@@ -170,10 +128,8 @@ header h1 {
   width: 2.2em;
   background-color: #88bdf2;
   position: absolute;
-  top: 50%;
-  /* Position buttons vertically centered */
-  transform: translateY(-50%);
-  /* Corrects the vertical alignment */
+  top: 50%; /* Position buttons vertically centered */
+  transform: translateY(-50%); /* Corrects the vertical alignment */
   border: none;
   border-radius: 50%;
   color: #384959;
@@ -182,11 +138,11 @@ header h1 {
 }
 
 .wrapper #prev {
-  left: 5px;
+  left: 5px; /* Left button */
 }
 
 .wrapper #next {
-  right: 5px;
+  right: 5px; /* Right button */
 }
 
 .wrapper #prev:hover,
@@ -195,8 +151,9 @@ header h1 {
   color: #384959;
 }
 
+/* Media Queries */
 
-/* For tablets and larger mobile screens */
+/* For tablets and larger mobile screens (between 600px and 1024px) */
 @media (max-width: 1024px) {
   header h1 {
     font-size: 1.5rem;
@@ -205,10 +162,8 @@ header h1 {
 
   .wrapper {
     width: 90%;
-    max-width: 80%;
+    max-width: 36em;
     padding: 15px;
-    margin-top: 70%;
-    height: 50%;
   }
 
   #logout-button {
@@ -254,7 +209,7 @@ header h1 {
   }
 }
 
-/* For smaller mobile screens  */
+/* For smaller mobile screens (less than 600px) */
 @media (max-width: 600px) {
   header h1 {
     font-size: 1.2rem;
@@ -266,7 +221,11 @@ header h1 {
   }
 
   .wrapper {
-    margin-top: 90%;
+    width: 95%;
+    max-width: 33em;
+    padding: 10px;
+    margin-top: 40px;
+    height: 250px;
   }
 
   .testimonial-card {
@@ -304,6 +263,6 @@ header h1 {
 
   .comment-container {
     height: 60%;
-    margin-top: 5%;
+    top: 5%;
   }
 }

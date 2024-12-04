@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('totalUsers').innerText = totalUsers;
     document.getElementById('totalBusinesses').innerText = totalBusinesses;
 
-    // Weather API integration for Mogadishu
-    const weatherApiKey = '4b5bb59e90d6c180fd66d3662994faaf'; // Provided weather API key
+    // Weather API 
+    const weatherApiKey = '4b5bb59e90d6c180fd66d3662994faaf'; 
     const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Mogadishu,SO&appid=${weatherApiKey}&units=metric`;
 
     //fetching weather from api (i use API that display mogadisho,so weather ,sunrise, sunset, timezone and more... to full requirements)
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('weatherInfo').innerHTML = weatherInfo;
     }
 
-    // Calling fetchWeather to get data
+    // Calling fetchWeather
     fetchWeather();
 
 
